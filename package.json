@@ -3,6 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "devDependencies": {
+    "@nx/js": "^22.7.4",
+    "@swc-node/register": "~1.11.1",
+    "@swc/core": "~1.15.5",
+    "@swc/helpers": "~0.5.18",
     "nx": "22.7.4"
-  }
+  },
+  "dependencies": {}
 }
