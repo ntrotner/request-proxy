@@ -1,0 +1,2 @@
+npx lint-staged
+npx nx affected --target=test --base=HEAD~1 --head=HEAD || npx nx run-many -t test

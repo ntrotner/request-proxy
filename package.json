@@ -3,9 +3,21 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "lint": "nx lint"
+    "lint": "nx lint",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx,mjs,cjs}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md,yaml,yml}": [
+      "prettier --write"
+    ]
   },
   "devDependencies": {
+    "@commitlint/cli": "^21.0.1",
+    "@commitlint/config-conventional": "^21.0.1",
     "@nx/eslint": "^22.7.4",
     "@nx/eslint-plugin": "22.7.4",
     "@nx/jest": "22.7.4",
@@ -22,10 +34,12 @@
     "@vitest/coverage-v8": "~4.1.0",
     "eslint": "~8.57.0",
     "eslint-config-prettier": "^10.0.0",
+    "husky": "^9.1.7",
     "jest": "~30.3.0",
     "jest-environment-node": "~30.3.0",
     "jest-util": "~30.3.0",
     "jsonc-eslint-parser": "^2.1.0",
+    "lint-staged": "^17.0.5",
     "nx": "22.7.4",
     "prettier": "~3.6.2",
     "ts-jest": "^29.4.0",
@@ -34,6 +48,5 @@
     "typescript": "~5.9.2",
     "vite": "^8.0.0",
     "vitest": "~4.1.0"
-  },
-  "dependencies": {}
+  }
 }

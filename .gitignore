@@ -2,6 +2,9 @@
 .claude/worktrees
 .claude/settings.local.json
 
+# editor
+.idea
+
 # dependencies
 node_modules
 
