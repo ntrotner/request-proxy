@@ -14,7 +14,7 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "paths": {
-      "common": ["./packages/common/src/index.ts"]
+      "@request-proxy/common": ["./packages/common/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

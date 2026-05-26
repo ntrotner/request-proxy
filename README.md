@@ -28,13 +28,13 @@ npm install
 **Non-buildable: source consumed directly, no build step**:
 
 ```shell
-npx nx g @nx/js:library my-package --directory=packages/my-package --bundler=none --compiler=swc --unitTestRunner=vitest
+npx nx g @nx/js:library my-package --directory=packages/my-package --importPath=@request-proxy/my-package --bundler=none --compiler=swc --unitTestRunner=vitest
 ```
 
 **Buildable**:
 
 ```shell
-npx nx g @nx/js:library my-package --directory=packages/my-package --bundler=swc --unitTestRunner=vitest
+npx nx g @nx/js:library my-package --directory=packages/my-package --importPath=@request-proxy/my-package --bundler=swc --unitTestRunner=vitest
 ```
 
 ## Best Practices
